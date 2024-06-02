@@ -1,0 +1,92 @@
+.site-container {
+  height: 100vh;
+  background-image: url("header.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center -10em;
+  overflow: hidden;
+}
+
+header {
+  margin-top: 4.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+.nav-bar {
+  max-width: 1080px;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar-center {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-link:hover {
+  color: #575757;
+}
+
+
+.bx-search {
+  color: #000000;
+  vertical-align: middle;
+}
+
+.stretch {
+  transform: scaleX(2);
+}
+
+
+.header-content {
+  color: white;
+  align-self: center;
+  max-width: 1080px;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.header-title {
+  font-size: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.ht-line-one {
+  display: flex;
+}
+.ht-line-two {display: flex;}
+
+.header-subtitle {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.title-square {
+  border: 5px solid white;
+  border-radius: 8px;
+  width: 100%;
+  height: .72em;
+  align-self: top;
+  margin-top: 0.41em;
+  margin-left: .1em;
+}
+
+@media only screen and  (max-width: 1349px) {
+  .site-container {
+    background-position: center -0em;
+  }
+}
