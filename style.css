@@ -1,32 +1,48 @@
-.site-container {
-  height: 100vh;
-  background-image: url("header.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center -10em;
-  overflow: hidden;
+img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -11em;
 }
 
-header {
-  margin-top: 4.5em;
+.nav-menu {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  margin-top: 4em;
+  justify-content: center;
+}
+
+.header-container {
+  position: relative;
+  flex-direction: column;
+}
+
+.site-container {
   display: flex;
   flex-direction: column;
 }
 
-.nav {
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-header {
   display: flex;
   justify-content: center;
-}
-
-
-.nav-bar {
+  align-items: center;
+  width: 100%;
   max-width: 1080px;
-  flex: 1;
-  display: flex;
-  justify-content: space-around;
 }
 
-.nav-bar-center {
+.nav-center {
   flex: 1;
   display: flex;
   justify-content: space-evenly;
@@ -46,33 +62,22 @@ header {
   vertical-align: middle;
 }
 
-.stretch {
-  transform: scaleX(2);
-}
-
-
-.header-content {
-  color: white;
-  align-self: center;
-  max-width: 1080px;
-  width: 100%;
-  margin-top: 3em;
+.bx-search {
+  vertical-align: middle;
 }
 
 .header-title {
-  font-size: 4em;
+  margin-top: 3em;
+  max-width: 1080px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
-.ht-line-one {
+.ht-line-one, .ht-line-two {
   display: flex;
-}
-.ht-line-two {display: flex;}
-
-.header-subtitle {
-  margin-top: 1em;
-  font-size: 1.5em;
+  font-size: 4em;
 }
 
 .title-square {
@@ -85,8 +90,35 @@ header {
   margin-left: .1em;
 }
 
-@media only screen and  (max-width: 1349px) {
-  .site-container {
-    background-position: center -0em;
-  }
+.ht-subtitle {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.main-content-container {
+  max-width: 1080px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  margin-top: -11em;
+  color: #59641E;
+}
+
+.viz-type {
+  padding: 2em;
+  text-align: center;
+}
+
+.viz-type img {
+  top: 0em;
+}
+
+.viz-type-subtitle {
+  margin-top: 1em;
+}
+
+.main-content-text {
+  grid-column: 1 / -1;
+  padding: 2em;
 }
