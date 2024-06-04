@@ -122,3 +122,44 @@ header {
   grid-column: 1 / -1;
   padding: 2em;
 }
+
+footer {
+  margin-top: 2em;
+  color: white;
+}
+
+.footer-top {
+  background-color: #B8C1AF;
+  border-radius: 50px 50px 0 0;
+  height: 40px;
+}
+
+.footer-bottom {
+  height:100px;
+  background-color: #72825F;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.footer-content-container {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content-right {
+  display: flex;
+  width:  40%; 
+  justify-content: space-between;
+}
+
+.footer-link {
+  color: inherit;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: #cccccc;
+}
