@@ -2,6 +2,9 @@ img {
   width: 100%;
   height: auto;
   position: relative;
+}
+
+.header-img {
   top: -11em;
 }
 
@@ -128,6 +131,17 @@ footer {
   color: white;
 }
 
+.footer-img-container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img-container {
+  max-width: 1080px;
+  width: 100%;
+}
+
+
 .footer-top {
   background-color: #B8C1AF;
   border-radius: 50px 50px 0 0;
@@ -162,4 +176,10 @@ footer {
 .footer-link:hover {
   text-decoration: none;
   color: #cccccc;
+}
+
+.footer-img {
+  width: 120px;
+  position: relative;
+  top: 32px;
 }
